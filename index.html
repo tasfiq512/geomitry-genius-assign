@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <header class=" container h-auto mx-auto flex justify-between bg-sky-100 p-6 rounded mt-10 ">
+        <h1 class="font-bold text-3xl"> Interactive <p class="text-slate-500 font-semibold text-2xl">Geometry Genius</p>
+        </h1>
+        <button  class="px-8 py-2  bg-blue-500 rounded text-white font-semibold  text-xl"> <a href="blog.html ">blog</a> 
+        </button>
+    </header>
+
+
+    <main class="grid lg:grid-cols-3 container h-auto mx-auto mt-10 gap-5 mb-10">
+        <div class="  grid lg:grid-cols-3 col-span-2  gap-5 ">
+
+            <div id="card_main"
+                class="cardss border-solid border-slate-400 rounded border flex flex-col justify-center items-center px-8 py-8 gap-y-5 ">
+                <img class="" src="./images/triangle.png" alt="">
+                <h1 class="text-2xl font-bold">Triangle</h1>
+                <p class="text-slate-600">Area (A) = <span>0.5 </span> x <span> b </span> x <span> h </span></p>
+                <p class="text-xl text-slate-700 ">b=<span>10</span>cm , h=<span>12</span>cm</p>
+                <div class="flex flex-row">
+                    <input id="triangle_b" class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="b">cm
+                    <input id="triangle_h" class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="h">cm
+                </div>
+                <button value="triangle" id="triangle_calculate"
+                    class="px-24 py-3  bg-blue-500 rounded text-white font-semibold  text-xl">Calculate</button>
+            </div>
+
+            <div id="card_main"
+                class=" cardss border-solid border-slate-400 rounded border flex flex-col justify-center items-center px-8 py-8 gap-y-5 ">
+                <img class="" src="./images/rectangle.png" alt="">
+                <h1 class="text-2xl font-bold pt-8">Rectangle</h1>
+                <p class="text-slate-600">Area (A) = <span> w </span> x <span> l </span></p>
+                <p class="text-xl text-slate-700 ">w=<span>10</span>cm , l=<span>12</span>cm</p>
+                <div class="flex flex-row" id="rectangleInputs">
+                    <input class="bg-slate-100 rounded w-2/4 px-2" type="text" placeholder="w">cm
+                    <input class="bg-slate-100 rounded w-2/4 px-2" type="text" placeholder="l">cm
+                </div>
+                <button value="rectangle"
+                    class="px-24 py-3  bg-blue-500 rounded text-white font-semibold  text-xl">Calculate</button>
+            </div>
+
+            <div id="card_main"
+                class=" cardss border-solid border-slate-400 rounded border flex flex-col justify-center items-center px-8 py-8  gap-y-5">
+                <img class="" src="./images/parallelogram.png" alt="">
+                <h1 class="text-2xl font-bold pt-12">Parallelogram</h1>
+                <p class="text-slate-600">Area (A) = <span> b </span> x <span> h </span></p>
+                <p class="text-xl text-slate-700 ">b=<span>10</span>cm , h=<span>12</span>cm</p>
+                <div class="flex flex-row" id="parallelogramInput">
+                    <input class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="b">cm
+                    <input class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="h">cm
+
+                </div>
+                <button value="parallelogram"
+                    class="px-24 py-3  bg-blue-500 rounded text-white font-semibold  text-xl">Calculate</button>
+            </div>
+
+
+            <div id="card_main"
+                class=" cardss border-solid border-slate-400 rounded border flex flex-col justify-center items-center px-8 py-8  gap-y-5">
+                <img class="" src="./images/rhombus.png" alt="">
+                <h1 class="text-2xl font-bold">Rhombus</h1>
+                <p class="text-slate-600">Area (A) = <span>0.5 </span> x <span> d <sub>1</sub> </span> x <span> d
+                        <sub>2</sub> </span></p>
+                <p class="text-xl text-slate-700 "> d <sub>1</sub>=<span>10</span>cm , d <sub>2</sub>=<span>12</span>cm
+                </p>
+                <div class="flex flex-row">
+                    <input class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="d1">cm
+                    <input class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="d1">cm
+                </div>
+                <button value="rhombus"
+                    class="px-24 py-3  bg-blue-500 rounded text-white font-semibold  text-xl">Calculate</button>
+            </div>
+
+            <div id="card_main"
+                class=" cardss border-solid border-slate-400 rounded border flex flex-col justify-center items-center px-8 py-8 gap-y-5 ">
+                <img src="./images/pentagon.png" alt="">
+                <h1 class="text-2xl font-bold">Pentagon</h1>
+                <p class="text-slate-600">Area (A) = <span>0.5 </span> x <span> p </span> x <span> b </span></p>
+                <p class="text-xl text-slate-700 ">p=<span>10</span>cm , b=<span>12</span>cm</p>
+                <div id="triangleInputs" class=" flex flex-row">
+                    <input class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="p">cm
+                    <input class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="b">cm
+
+                </div>
+                <button value="pentagon" class="px-24 py-3  bg-blue-500 rounded text-white font-semibold  text-xl"
+                    value="triangle">Calculate</button>
+            </div>
+
+            <div id="card_main"
+                class=" cardss border-solid border-slate-400 rounded border flex flex-col justify-center items-center px-8 py-8 gap-y-5 ">
+                <img class="" src="./images/ellipse.png" alt="">
+                <h1 class="text-2xl font-bold pt-6 ">Ellipse</h1>
+                <p class="text-slate-600 flex justify-center items-center"> Area (A) = <span> <img
+                            src="./images/pi-mathematical-constant-symbol.png"
+                            alt=""></span><span>a</span><span>b</span></p>
+                <p class="text-xl text-slate-700 "> a=<span>12</span>cm ,b=<span>12</span>cm </p>
+                <div class="flex flex-row">
+                    <input class="bg-slate-100 rounded w-2/4 mr-2 px-2 " type="text" placeholder="a">cm
+                    <input class="bg-slate-100 rounded w-2/4 px-2 " type="text" placeholder="b">cm
+                </div>
+                <button value="ellipse"
+                    class="px-24 py-3  bg-blue-500 rounded text-white font-semibold  text-xl ">Calculate</button>
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div id="resultDiv" class="border-solid border-slate-400 rounded border  gap-y-5 flex flex-col  items-center ">
+            <h1 class="text-3xl font-semibold pt-5 ">Area Calculation</h1>
+            <hr class="w-1/2 border-2 dark:bg-gray-800">
+
+        </div>
+    </main>
+
+
+
+    <script src="geo.js"></script>
+
+</html>/
